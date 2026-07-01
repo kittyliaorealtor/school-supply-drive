@@ -1,0 +1,14 @@
+{
+  "driveName": "School Supply Drive",
+  "wishlistUrl": "PASTE_YOUR_AMAZON_WISHLIST_URL_HERE",
+  "lastUpdated": "2026-07-01",
+  "categories": [
+    { "item": "Backpacks", "needed": 50, "fulfilled": 8 },
+    { "item": "Pencils (boxes of 12)", "needed": 40, "fulfilled": 40 },
+    { "item": "Notebooks (packs of 5)", "needed": 60, "fulfilled": 15 },
+    { "item": "Folders (packs of 10)", "needed": 40, "fulfilled": 5 },
+    { "item": "Crayons/Markers", "needed": 30, "fulfilled": 0 },
+    { "item": "Calculators", "needed": 20, "fulfilled": 2 },
+    { "item": "Hygiene Kits", "needed": 35, "fulfilled": 10 }
+  ]
+}
