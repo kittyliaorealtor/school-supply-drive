@@ -9,12 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --navy: #1f4e78;
-    --navy-dark: #163a5a;
+    --navy: #0b6e4f;       /* brand green — was navy blue */
+    --navy-dark: #084d38;  /* darker brand green, for gradients/hover */
+    --brand-mid: #5fab8c;  /* mid-tone accent from brand palette */
+    --brand-light: #d3e8de; /* palest tint from brand palette */
     --gold: #b98a00;
-    --green: #1a7f37;
+    --green: #1f4e78;      /* "Fully Stocked" indicator — kept blue so it doesn't blend into brand green */
     --red: #b42318;
-    --cream: #faf8f4;
+    --cream: #f3f8f6;
     --bg: #f5f6f8;
     --card: #ffffff;
     --border: #e4e7eb;
@@ -135,7 +137,7 @@
   .item-name { font-weight: 600; font-size: 0.98rem; }
   .item-count { font-size: 0.85rem; color: var(--muted); }
   .badge { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 999px; margin-left: 8px; vertical-align: middle; }
-  .badge-full { background: #e6f4ea; color: var(--green); }
+  .badge-full { background: #e8eff5; color: var(--green); }
   .badge-low { background: #fdecea; color: var(--red); }
   .badge-mid { background: #fff6e0; color: var(--gold); }
   .bar-track { background: #eef0f3; border-radius: 6px; height: 10px; overflow: hidden; }
