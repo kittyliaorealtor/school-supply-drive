@@ -1,6 +1,6 @@
 {
   "driveName": "School Supply Drive",
-  "wishlistUrl": "PASTE_YOUR_AMAZON_WISHLIST_URL_HERE",
+  "wishlistUrl": "https://www.amazon.com/hz/wishlist/ls/1YITUA70VYWVP",
   "lastUpdated": "2026-07-01",
   "categories": [
     { "item": "Backpacks", "needed": 50, "fulfilled": 8 },
