@@ -1,7 +1,46 @@
 {
-  "driveName": "School Supply Drive",
-  "wishlistUrl": "https://www.amazon.com/hz/wishlist/ls/1YITUA70VYWVP",
+  "driveName": "MARSCoaching School Supply Drive",
+  "tagline": "Every student deserves their fair shot — help us get local kids ready for the new school year.",
+  "wishlistUrl": "PASTE_YOUR_AMAZON_WISHLIST_URL_HERE",
   "lastUpdated": "2026-07-01",
+
+  "story": [
+    "MARSCoaching and our agents have always prided ourselves on giving back to our community and helping build up those who need an extra hand. With this current school year wrapping up, summer will pass by sooner than we'd like, and we want to make it a little more meaningful this year.",
+    "Every student, every child deserves their fair shot at a proper education, but not every child is fortunate enough to have an otherwise standard part of life be as easy and straightforward as we had it. They don't get the luxury of new pencils every year, or a backpack without holes. For many, the reality is that supplies get passed down from friends and family, and they make it work.",
+    "There are people in our community who want to do something about it but may not know where to start, or may not feel like one person's effort will make a big enough impact. That's where we step in — to bring like-minded people together and be the change we want our future to have."
+  ],
+
+  "timeline": {
+    "collectionStart": "July 1, 2026",
+    "collectionEnd": "August 15, 2026",
+    "deliveryWindow": "Week of August 17, 2026",
+    "note": "August 15 is the last day to donate. All supplies will be packed and personally delivered to schools the following week."
+  },
+
+  "dropoff": {
+    "address": "400 Garden City Plaza, Suite 438, Garden City, NY 11530",
+    "hours": [
+      "Monday – Friday: 9:00 AM – 6:00 PM",
+      "Saturday – Sunday: 10:00 AM – 3:00 PM"
+    ],
+    "note": "Amazon Wishlist purchases ship directly to this address. If you have supplies at home you'd like to donate, you're welcome to drop them off here during office hours."
+  },
+
+  "cashDonations": {
+    "note": "Reach out to your local event coordinator for alternative monetary donation methods.",
+    "venmo": "@KittyLiao",
+    "coordinators": [
+      { "name": "Kitty Liao", "role": "Event Organizer", "email": "kittyliao@kw.com", "phone": "917-858-5789" }
+    ]
+  },
+
+  "organizer": {
+    "name": "Kitty Liao",
+    "title": "Local Realtor, Community Member",
+    "email": "kittyliao@kw.com",
+    "phone": "917-858-5789"
+  },
+
   "categories": [
     { "item": "Backpacks", "needed": 50, "fulfilled": 8 },
     { "item": "Pencils (boxes of 12)", "needed": 40, "fulfilled": 40 },
