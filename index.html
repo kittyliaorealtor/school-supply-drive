@@ -71,6 +71,8 @@
     margin-top: 4px;
   }
 
+  .distribution-line { text-align: center; font-size: 0.95rem; color: var(--muted); margin: 0 0 24px; }
+  .distribution-line strong { color: var(--text); font-weight: 600; }
   .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
   .info-card {
     background: var(--card);
@@ -196,6 +198,7 @@
       <h2>Drive Details</h2>
       <p>Everything you need to know to donate.</p>
     </div>
+    <p class="distribution-line" id="distributionLine"></p>
     <div class="card-grid" id="detailCards"></div>
   </div>
 </section>
@@ -300,13 +303,9 @@ async function loadSite() {
         </div>`);
     }
     if (data.distribution) {
-      const schools = (data.distribution.schools || []).map(s => `<li>${s}</li>`).join('');
-      cards.push(`
-        <div class="info-card">
-          <div class="card-head">${iconSvg('school')}<h3>Where It's Going</h3></div>
-          <p>${data.distribution.note || ''}</p>
-          <ul>${schools}</ul>
-        </div>`);
+      const schools = (data.distribution.schools || []).join(', ');
+      document.getElementById('distributionLine').innerHTML =
+        `${data.distribution.note || ''} <strong>${schools}</strong>`;
     }
 
     document.getElementById('detailCards').innerHTML = cards.join('');
