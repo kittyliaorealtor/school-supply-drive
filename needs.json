@@ -1,14 +1,13 @@
 {
   "driveName": "MARSCoaching School Supply Drive",
   "tagline": "Every student deserves their fair shot — help us get local kids ready for the new school year.",
-  "wishlistUrl": "https://www.amazon.com/hz/wishlist/ls/1YITUA70VYWVP/ref=nav_wishlist_lists_1",
+  "wishlistUrl": "PASTE_YOUR_AMAZON_WISHLIST_URL_HERE",
   "lastUpdated": "2026-07-01",
 
   "story": [
     "MARSCoaching and our agents have always prided ourselves on giving back to our community and helping build up those who need an extra hand. With this current school year wrapping up, summer will pass by sooner than we'd like, and we want to make it a little more meaningful this year.",
     "Every student, every child deserves their fair shot at a proper education, but not every child is fortunate enough to have an otherwise standard part of life be as easy and straightforward as we had it. They don't get the luxury of new pencils every year, or a backpack without holes. For many, the reality is that supplies get passed down from friends and family, and they make it work.",
     "There are people in our community who want to do something about it but may not know where to start, or may not feel like one person's effort will make a big enough impact. That's where we step in — to bring like-minded people together and be the change we want our future to have."
-    "All supplies will be donated to these schools:"
   ],
 
   "timeline": {
@@ -42,13 +41,20 @@
     "phone": "917-858-5789"
   },
 
+  "distribution": {
+    "note": "All supplies will be distributed to these schools:",
+    "schools": [
+      "Joseph A. McNeil Elementary School"
+    ]
+  },
+
   "categories": [
-    { "item": "Backpacks", "needed": 50, "fulfilled": 0 },
-    { "item": "Packs of Pencils", "needed": 10, "fulfilled": 0 },
-    { "item": "Marble Notebooks", "needed": 60, "fulfilled": 0 },
-    { "item": "Folders (packs of 6)", "needed": 30, "fulfilled": 0 },
-    { "item": "Crayons", "needed": 60, "fulfilled": 0 },
-    { "item": "Markers", "needed": 60, "fulfilled": 0 },
-    { "item": "Baby Wipes", "needed": 10, "fulfilled": 0 }
+    { "item": "Backpacks", "needed": 50, "fulfilled": 8 },
+    { "item": "Pencils (boxes of 12)", "needed": 40, "fulfilled": 40 },
+    { "item": "Notebooks (packs of 5)", "needed": 60, "fulfilled": 15 },
+    { "item": "Folders (packs of 10)", "needed": 40, "fulfilled": 5 },
+    { "item": "Crayons/Markers", "needed": 30, "fulfilled": 0 },
+    { "item": "Calculators", "needed": 20, "fulfilled": 2 },
+    { "item": "Hygiene Kits", "needed": 35, "fulfilled": 10 }
   ]
 }
