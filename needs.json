@@ -2,7 +2,7 @@
   "driveName": "MARSCoaching School Supply Drive",
   "tagline": "Every student deserves their fair shot — help us get local kids ready for the new school year.",
   "wishlistUrl": "https://www.amazon.com/hz/wishlist/ls/1YITUA70VYWVP?ref_=wl_share",
-  "lastUpdated": "2026-07-01",
+  "lastUpdated": "2026-07-08",
 
   "story": [
     "MARSCoaching and our agents have always prided ourselves on giving back to our community and helping build up those who need an extra hand. With this current school year wrapping up, summer will pass by sooner than we'd like, and we want to make it a little more meaningful this year.",
@@ -11,7 +11,7 @@
   ],
 
   "timeline": {
-    "collectionStart": "July 1, 2026",
+    "collectionStart": "July 10, 2026",
     "collectionEnd": "August 15, 2026",
     "deliveryWindow": "Week of August 17, 2026",
     "note": "August 15 is the last day to donate. All supplies will be packed and personally delivered to schools the following week."
@@ -20,10 +20,10 @@
   "dropoff": {
     "address": "400 Garden City Plaza, Suite 438, Garden City, NY 11530",
     "hours": [
-      "Monday – Friday: 9:00 AM – 6:00 PM",
-      "Saturday – Sunday: 10:00 AM – 3:00 PM"
+      "Monday – Friday: 9 AM – 6 PM",
+      "Saturday – Sunday: 10 AM – 3 PM"
     ],
-    "note": "Amazon Wishlist purchases ship directly to this address. If you have supplies at home you'd like to donate, you're welcome to drop them off here during office hours."
+    "note": "Amazon Wishlist purchases ship directly to this address. If you have new/unused supplies at home you'd like to donate, you're welcome to drop them off here during office hours."
   },
 
   "cashDonations": {
@@ -49,12 +49,19 @@
   },
 
   "categories": [
-    { "item": "Backpacks", "needed": 50, "fulfilled": 8 },
-    { "item": "Pencils (boxes of 12)", "needed": 40, "fulfilled": 40 },
-    { "item": "Notebooks (packs of 5)", "needed": 60, "fulfilled": 15 },
-    { "item": "Folders (packs of 10)", "needed": 40, "fulfilled": 5 },
-    { "item": "Crayons/Markers", "needed": 30, "fulfilled": 0 },
-    { "item": "Calculators", "needed": 20, "fulfilled": 2 },
-    { "item": "Hygiene Kits", "needed": 35, "fulfilled": 10 }
+    { "item": "Dry Erase Markers (Pack of 4)", "needed": 40, "fulfilled": 0 },
+    { "item": "Post Its (Pack of 8)", "needed": 40, "fulfilled": 0 },
+    { "item": "Hand Sanitizer (Pack of 6)", "needed": 20, "fulfilled": 0 },
+    { "item": "Printer Paper", "needed": 40, "fulfilled": 0 },
+    { "item": "Lysol Wipes (Pack of 4)", "needed": 20, "fulfilled": 0 },
+    { "item": "Facial Tissues (Pack of 8)", "needed": 20, "fulfilled": 0 },
+    { "item": "Highlighter (Pack of 5)", "needed": 100, "fulfilled": 0 },
+    { "item": "Index Cards (Pack of 5)", "needed": 30, "fulfilled": 0 }
+    { "item": "Glue Sticks (Box of 30)", "needed": 10, "fulfilled": 0 }
+    { "item": "Notebooks (Pack of 5)", "needed": 60, "fulfilled": 0 }
+    { "item": "Markers (Box of 10)", "needed": 100, "fulfilled": 0 }
+    { "item": "Crayons (Box of 24)", "needed": 100, "fulfilled": 0 }
+    { "item": "Plastic Folders (Pack of 6)", "needed": 60, "fulfilled": 0 }
+    { "item": "No. 2 Pencils (Box of 30)", "needed": 100, "fulfilled": 0 }
   ]
 }
