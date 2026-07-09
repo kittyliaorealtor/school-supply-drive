@@ -290,16 +290,11 @@ async function loadSite() {
       const venmoLine = venmoHandle
         ? `<p class="venmo-line"><strong>Venmo:</strong> <a href="https://venmo.com/u/${venmoUser}" target="_blank" rel="noopener">${venmoHandle}</a></p>`
         : '';
-      const coords = (data.cashDonations.coordinators || []).map(c => `
-        <li><strong>${c.name}</strong>${c.role ? ' — ' + c.role : ''}<br>
-        <a href="mailto:${c.email}">${c.email}</a> · <a href="tel:${(c.phone||'').replace(/[^0-9+]/g,'')}">${c.phone}</a></li>
-      `).join('');
       cards.push(`
         <div class="info-card">
           <div class="card-head">${iconSvg('cash')}<h3>Cash Donations</h3></div>
           ${venmoLine}
           <p>${data.cashDonations.note || ''}</p>
-          <ul>${coords}</ul>
         </div>`);
     }
     if (data.distribution) {
