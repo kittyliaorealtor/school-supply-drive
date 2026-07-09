@@ -88,6 +88,7 @@
   .info-card a { color: var(--navy); font-weight: 600; text-decoration: none; }
   .info-card a:hover { text-decoration: underline; }
   .venmo-line { font-size: 0.98rem !important; color: var(--text) !important; margin-bottom: 10px !important; }
+  .info-card p.note-gap { margin-top: 10px; }
   .venmo-line a { color: var(--navy); font-weight: 700; text-decoration: none; }
   .venmo-line a:hover { text-decoration: underline; }
   .badge-deadline {
@@ -290,11 +291,13 @@ async function loadSite() {
       const venmoLine = venmoHandle
         ? `<p class="venmo-line"><strong>Venmo:</strong> <a href="https://venmo.com/u/${venmoUser}" target="_blank" rel="noopener">${venmoHandle}</a></p>`
         : '';
+      const noteArr = Array.isArray(data.cashDonations.note) ? data.cashDonations.note : [data.cashDonations.note || ''];
+      const noteHtml = noteArr.map((n, idx) => `<p class="${idx > 0 ? 'note-gap' : ''}">${n}</p>`).join('');
       cards.push(`
         <div class="info-card">
           <div class="card-head">${iconSvg('cash')}<h3>Cash Donations</h3></div>
           ${venmoLine}
-          <p>${data.cashDonations.note || ''}</p>
+          ${noteHtml}
         </div>`);
     }
     if (data.distribution) {
