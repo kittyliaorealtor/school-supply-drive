@@ -23,11 +23,11 @@
       "Monday – Friday: 9:00 AM – 6:00 PM",
       "Saturday – Sunday: 10:00 AM – 3:00 PM"
     ],
-    "note": "Amazon Wishlist orders ship directly to this address. If you have supplies at home you'd like to donate, you're welcome to drop them off here during office hours."
+    "note": "Amazon Wishlist purchases ship directly to this address. If you have supplies at home you'd like to donate, you're welcome to drop them off here during office hours."
   },
 
   "cashDonations": {
-  "note": [
+    "note": [
       "For any cash donations, you can Venmo the event organizer above.",
       "Or reach out to your local event coordinator for alternative monetary donation methods (the one on the business card, flyer, or who sent you this link)."
     ],
@@ -42,9 +42,10 @@
   },
 
   "distribution": {
-    "note": "All supplies will be distributed to:",
+    "note": "All supplies will be distributed to these schools:",
     "schools": [
-      "Joseph A. McNeil Elementary School & PS024 Andrew Jackson Elementary School"
+      "Joseph A. McNeil Elementary School",
+      "PS 024 Andrew Jackson Elementary School"
     ]
   },
 
