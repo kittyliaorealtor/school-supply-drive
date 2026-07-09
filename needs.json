@@ -29,8 +29,6 @@
   "cashDonations": {
     "note": "Reach out to your local event coordinator for alternative monetary donation methods.",
     "venmo": "@KittyLiao",
-    "coordinators": [
-      { "name": "Kitty Liao", "role": "Event Organizer", "email": "kittyliao@kw.com", "phone": "917-858-5789" }
     ]
   },
 
