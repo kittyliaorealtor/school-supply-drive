@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MARSCoaching School Supply Drive — Live Needs Tracker</title>
+<title>Summer 2026 School Supply Drive — Live Needs Tracker</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -146,6 +146,12 @@
   .bar-track { background: #eef0f3; border-radius: 6px; height: 10px; overflow: hidden; }
   .bar-fill { height: 100%; border-radius: 6px; transition: width 0.4s ease; }
 
+  .organizer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
   .organizer-card {
     display: flex;
     align-items: center;
@@ -154,8 +160,8 @@
     border: 1px solid var(--border);
     border-radius: 14px;
     padding: 24px;
-    max-width: 460px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 340px;
     box-shadow: 0 2px 10px rgba(20,30,50,0.05);
   }
   .avatar {
@@ -180,7 +186,7 @@
 
 <header>
   <div class="eyebrow">Community School Supply Drive</div>
-  <h1 id="driveTitle">MARSCoaching School Supply Drive</h1>
+  <h1 id="driveTitle">Summer 2026 School Supply Drive</h1>
   <p class="tagline" id="tagline">Every student deserves their fair shot — help us get local kids ready for the new school year.</p>
 </header>
 
@@ -219,7 +225,7 @@
   <div class="wrap">
     <div class="section-header">
       <h2>What We Still Need</h2>
-      <p>Items marked "Fully Stocked" don't need more — please pick something else before getting more of those. Thank you!</p>
+      <p>Sorted by most urgent first. Items marked "Fully Stocked" don't need more — please pick something else!</p>
     </div>
     <div id="updated"></div>
     <div id="itemList"></div>
@@ -231,7 +237,7 @@
     <div class="section-header">
       <h2>Questions? Reach Out</h2>
     </div>
-    <div id="organizerWrap"></div>
+    <div class="organizer-row" id="organizerWrap"></div>
   </div>
 </section>
 
@@ -286,11 +292,12 @@ async function loadSite() {
         </div>`);
     }
     if (data.cashDonations) {
-      const venmoHandle = data.cashDonations.venmo || '';
-      const venmoUser = venmoHandle.replace(/^@/, '');
-      const venmoLine = venmoHandle
-        ? `<p class="venmo-line"><strong>Venmo:</strong> <a href="https://venmo.com/u/${venmoUser}" target="_blank" rel="noopener">${venmoHandle}</a></p>`
-        : '';
+      const venmoList = data.cashDonations.venmoHandles
+        || (data.cashDonations.venmo ? [{ name: '', handle: data.cashDonations.venmo }] : []);
+      const venmoLine = venmoList.map(v => {
+        const user = (v.handle || '').replace(/^@/, '');
+        return `<p class="venmo-line">${v.name ? `<strong>${v.name}:</strong> ` : '<strong>Venmo:</strong> '}<a href="https://venmo.com/u/${user}" target="_blank" rel="noopener">${v.handle}</a></p>`;
+      }).join('');
       const noteArr = Array.isArray(data.cashDonations.note) ? data.cashDonations.note : [data.cashDonations.note || ''];
       const noteHtml = noteArr.map((n, idx) => `<p class="${idx > 0 ? 'note-gap' : ''}">${n}</p>`).join('');
       cards.push(`
@@ -308,21 +315,23 @@ async function loadSite() {
 
     document.getElementById('detailCards').innerHTML = cards.join('');
 
-    // Organizer
-    if (data.organizer) {
-      const o = data.organizer;
+    // Organizers
+    const organizerList = data.organizers || (data.organizer ? [data.organizer] : []);
+    document.getElementById('organizerWrap').innerHTML = organizerList.map(o => {
       const initials = (o.name || '').split(' ').map(w => w[0]).join('').slice(0, 2);
-      document.getElementById('organizerWrap').innerHTML = `
+      const emailLine = o.email ? `<a href="mailto:${o.email}">${iconSvg('mail')} ${o.email}</a>` : '';
+      const phoneLine = o.phone ? `<a href="tel:${o.phone.replace(/[^0-9+]/g,'')}">${iconSvg('phone')} ${o.phone}</a>` : '';
+      return `
         <div class="organizer-card">
           <div class="avatar">${initials}</div>
           <div>
             <h3>${o.name}</h3>
-            <div class="role">${o.title || ''}</div>
-            <a href="mailto:${o.email}">${iconSvg('mail')} ${o.email}</a>
-            <a href="tel:${(o.phone||'').replace(/[^0-9+]/g,'')}">${iconSvg('phone')} ${o.phone}</a>
+            ${o.title ? `<div class="role">${o.title}</div>` : ''}
+            ${emailLine}
+            ${phoneLine}
           </div>
         </div>`;
-    }
+    }).join('');
 
     // Needs tracker
     const items = (data.categories || []).map(c => {
