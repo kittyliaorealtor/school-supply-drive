@@ -58,19 +58,19 @@
   },
 
   "categories": [
-    { "item": "Dry Erase Markers (Pack of 4)", "needed": 40, "fulfilled": 0 },
-    { "item": "Post Its (Pack of 8)", "needed": 40, "fulfilled": 0 },
+    { "item": "Dry Erase Markers (Pack of 4)", "needed": 30, "fulfilled": 0 },
+    { "item": "Post Its (Pack of 8)", "needed": 30, "fulfilled": 0 },
     { "item": "Hand Sanitizer (Pack of 6)", "needed": 20, "fulfilled": 0 },
-    { "item": "Printer Paper", "needed": 40, "fulfilled": 0 },
+    { "item": "Printer Paper", "needed": 30, "fulfilled": 0 },
     { "item": "Lysol Wipes (Pack of 4)", "needed": 20, "fulfilled": 0 },
     { "item": "Facial Tissues (Pack of 8)", "needed": 20, "fulfilled": 0 },
-    { "item": "Highlighter (Pack of 5)", "needed": 100, "fulfilled": 2 },
+    { "item": "Highlighter (Pack of 5)", "needed": 50, "fulfilled": 2 },
     { "item": "Index Cards (Pack of 5)", "needed": 30, "fulfilled": 0 },
     { "item": "Glue Sticks (Box of 30)", "needed": 10, "fulfilled": 0 },
     { "item": "Notebooks (Pack of 5)", "needed": 60, "fulfilled": 0 },
-    { "item": "Markers (Box of 10)", "needed": 100, "fulfilled": 0 },
-    { "item": "Crayons (Box of 24)", "needed": 100, "fulfilled": 2 },
-    { "item": "Plastic Folders (Pack of 6)", "needed": 60, "fulfilled": 0 },
-    { "item": "No. 2 Pencils (Box of 30)", "needed": 100, "fulfilled": 1 }
+    { "item": "Markers (Box of 10)", "needed": 50, "fulfilled": 0 },
+    { "item": "Crayons (Box of 24)", "needed": 50, "fulfilled": 2 },
+    { "item": "Plastic Folders (Pack of 6)", "needed": 50, "fulfilled": 0 },
+    { "item": "No. 2 Pencils (Box of 30)", "needed": 50, "fulfilled": 1 }
   ]
 }
