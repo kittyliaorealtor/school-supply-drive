@@ -50,7 +50,7 @@
   ],
 
   "distribution": {
-    "note": "All supplies will be distributed to these schools:",
+    "note": "All supplies will be distributed to:",
     "schools": [
       "Joseph A. McNeil Elementary School",
       "PS 024 Andrew Jackson Elementary School"
@@ -71,6 +71,6 @@
     { "item": "Markers (Box of 10)", "needed": 50, "fulfilled": 0 },
     { "item": "Crayons (Box of 24)", "needed": 50, "fulfilled": 2 },
     { "item": "Plastic Folders (Pack of 6)", "needed": 50, "fulfilled": 0 },
-    { "item": "No. 2 Pencils (Box of 30)", "needed": 50, "fulfilled": 1 }
+    { "item": "No. 2 Pencils (Box of 30)", "needed": 50, "fulfilled": 31 }
   ]
 }
