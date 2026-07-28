@@ -2,7 +2,7 @@
   "driveName": "Summer 2026 School Supply Drive",
   "tagline": "Every student deserves their fair shot — help us get local kids ready for the new school year.",
   "wishlistUrl": "https://www.amazon.com/hz/wishlist/ls/1YITUA70VYWVP?ref_=wl_share",
-  "lastUpdated": "2026-07-27",
+  "lastUpdated": "2026-07-28",
 
   "story": [
     "MARSCoaching and our agents have always prided ourselves on giving back to our community and helping build up those who need an extra hand. With this current school year wrapped up, summer will pass by sooner than we'd like, and we want to make it a little more meaningful this year.",
@@ -59,18 +59,18 @@
 
   "categories": [
     { "item": "Dry Erase Markers (Pack of 4)", "needed": 30, "fulfilled": 0 },
-    { "item": "Post Its (Pack of 8)", "needed": 30, "fulfilled": 1 },
-    { "item": "Hand Sanitizer (Pack of 6)", "needed": 20, "fulfilled": 1 },
-    { "item": "Printer Paper", "needed": 30, "fulfilled": 0 },
-    { "item": "Lysol Wipes (Pack of 4)", "needed": 20, "fulfilled": 1 },
-    { "item": "Facial Tissues (Pack of 8)", "needed": 20, "fulfilled": 1 },
-    { "item": "Highlighter (Pack of 5)", "needed": 50, "fulfilled": 2 },
+    { "item": "Post Its (Pack of 8)", "needed": 30, "fulfilled": 2 },
+    { "item": "Hand Sanitizer (Pack of 6)", "needed": 20, "fulfilled": 2 },
+    { "item": "Printer Paper", "needed": 30, "fulfilled": 1 },
+    { "item": "Lysol Wipes (Pack of 4)", "needed": 20, "fulfilled": 2 },
+    { "item": "Facial Tissues (Pack of 8)", "needed": 20, "fulfilled": 2 },
+    { "item": "Highlighter (Pack of 5)", "needed": 50, "fulfilled": 7 },
     { "item": "Index Cards (Pack of 5)", "needed": 30, "fulfilled": 1 },
     { "item": "Glue Sticks (Box of 30)", "needed": 10, "fulfilled": 1 },
-    { "item": "Notebooks (Pack of 5)", "needed": 60, "fulfilled": 1 },
+    { "item": "Notebooks (Pack of 5)", "needed": 60, "fulfilled": 3 },
     { "item": "Markers (Box of 10)", "needed": 50, "fulfilled": 1 },
-    { "item": "Crayons (Box of 24)", "needed": 50, "fulfilled": 3 },
-    { "item": "Plastic Folders (Pack of 6)", "needed": 50, "fulfilled": 1 },
-    { "item": "No. 2 Pencils (Box of 30)", "needed": 50, "fulfilled": 31 }
+    { "item": "Crayons (Box of 24)", "needed": 50, "fulfilled": 8 },
+    { "item": "Plastic Folders (Pack of 6)", "needed": 50, "fulfilled": 3 },
+    { "item": "No. 2 Pencils (Box of 30)", "needed": 50, "fulfilled": 34 }
   ]
 }
