@@ -70,6 +70,6 @@
     { "item": "Markers (Box of 10)", "needed": 60, "fulfilled": 33 },
     { "item": "Crayons (Box of 24)", "needed": 60, "fulfilled": 62 },
     { "item": "Plastic Folders (Pack of 6)", "needed": 50, "fulfilled": 7 },
-    { "item": "No. 2 Pencils (Box of 30)", "needed": 50, "fulfilled": 40 }
+    { "item": "No. 2 Pencils (Box of 30)", "needed": 40, "fulfilled": 40 }
   ]
 }
