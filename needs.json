@@ -67,8 +67,8 @@
     { "item": "Index Cards (Pack of 5)", "needed": 30, "fulfilled": 3 },
     { "item": "Glue Sticks (Box of 30)", "needed": 10, "fulfilled": 3 },
     { "item": "Notebooks (Pack of 5)", "needed": 60, "fulfilled": 5 },
-    { "item": "Markers (Box of 10)", "needed": 60, "fulfilled": 33 },
-    { "item": "Crayons (Box of 24)", "needed": 60, "fulfilled": 62 },
+    { "item": "Markers (Pack of 12)", "needed": 6, "fulfilled": 3 },
+    { "item": "Crayons (Pack of 24)", "needed": 3, "fulfilled": 3 },
     { "item": "Plastic Folders (Pack of 6)", "needed": 50, "fulfilled": 7 },
     { "item": "No. 2 Pencils (Box of 30)", "needed": 40, "fulfilled": 40 }
   ]
