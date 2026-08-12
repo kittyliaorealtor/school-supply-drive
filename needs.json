@@ -58,7 +58,7 @@
 
   "categories": [
     { "item": "Dry Erase Markers (Pack of 12)", "needed": 20, "fulfilled": 3 },
-    { "item": "Post Its (Pack of 8)", "needed": 10, "fulfilled": 1 },
+    { "item": "Post Its (Pack of 24)", "needed": 10, "fulfilled": 1 },
     { "item": "Hand Sanitizer (Pack of 6)", "needed": 20, "fulfilled": 5 },
     { "item": "Printer Paper", "needed": 30, "fulfilled": 3 },
     { "item": "Lysol Wipes (Pack of 4)", "needed": 15, "fulfilled": 4 },
